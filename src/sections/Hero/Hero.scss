@@ -1,0 +1,53 @@
+.hero {
+  padding-block: 40px;
+  color: var(--color-white);
+  background-color: var(--color-green-100);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 500px;
+
+    @include laptop {
+      max-width: 680px;
+    }
+  }
+
+  &__suptitle {
+    margin-bottom: 15px;
+    font-size: fluid(16, 14);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.31em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-family: var(--font-family-second), sans-serif;
+    line-height: 1.25;
+  }
+
+  &__desc {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 1.25;
+    color: var(--color-white-75);
+  }
+
+  &__bg-image {
+    @include laptop {
+      order: -1;
+      margin-bottom: 30px;
+    }
+  }
+}

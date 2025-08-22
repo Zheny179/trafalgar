@@ -1,0 +1,27 @@
+.button {
+  padding: 13px 48px;
+  color: var(--color-black);
+  background: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius-xxs);
+  cursor: pointer;
+
+  @include hover {
+    color: var(--color-white);
+    background: var(--color-dark-100);
+  }
+
+  &--black {
+    color: var(--color-white);
+    background: var(--color-dark-100);
+
+    @include hover {
+      color: var(--color-black);
+      background: var(--color-white);
+    }
+  }
+
+  &:active {
+    scale: 1.05;
+  }
+}

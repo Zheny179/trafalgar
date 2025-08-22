@@ -1,0 +1,42 @@
+.burger-button {
+  @include flex-center;
+
+  flex-direction: column;
+  row-gap: 7px;
+
+  @include square(44px);
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  @include hover {
+    span {
+      background-color: var(--color-dark-100);
+    }
+  }
+
+  span {
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    transition-duration: var(--transition-duration);
+  }
+
+  &.is-active {
+    span:first-child {
+      transform-origin: 0;
+      rotate: 45deg;
+    }
+
+    span:nth-child(2) {
+      width: 0;
+    }
+
+    span:last-child {
+      transform-origin: 0;
+      rotate: -45deg;
+    }
+  }
+}

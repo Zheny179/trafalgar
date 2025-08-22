@@ -1,0 +1,47 @@
+:root {
+  --color-white: #ffffff;
+  --color-white-75: rgb(255 255 255/0.75);
+  --color-white-50: rgb(255 255 255/0.5);
+  --color-white-25: rgb(255 255 255/0.25);
+
+  --color-black: #000000;
+
+  --color-accent: #3d6b54ff;
+
+  --color-dark-100: #212529;
+  --color-dark-75: rgb(33 37 41/0.75);
+  --color-dark-50: rgb(33 37 41/0.5);
+  --color-dark-25: rgb(33 37 41/0.25);
+
+  --color-green-100: #74c69d;
+  --color-green-75: rgb(116 198 157/0.75);
+  --color-green-50: rgb(116 198 157/0.5);
+  --color-green-25: rgb(116 198 157/0.25);
+
+  --color-gray: #808080;
+
+  --border: var(--border-width-m) solid var(--color-accent);
+
+  --border-width-xl: 6px;
+  --border-width-l: 4px;
+  --border-width-m: 3px;
+  --border-width-s: 1px;
+
+  --border-radius-l: 12px;
+  --border-radius-m: 10px;
+  --border-radius: 8px;
+  --border-radius-xs: 6px;
+  --border-radius-xxs: 5px;
+  --border-radius-xxxs: 4px;
+
+  --font-family-base: "WorkSans";
+  --font-family-second: "CrimsonText";
+
+  --container-width: #{$container-desktop-width};
+  --container-padding-x: 120px;
+
+  @include tablet {
+    --container-padding-x: 20px;
+  }
+  --transition-duration: 0.2s;
+}
