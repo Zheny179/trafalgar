@@ -1,5 +1,4 @@
 import "./Hero.scss"
-import bg from "@/assets/images/hero/bg.svg"
 import { Image } from "minista"
 import Button from "@/components/Button"
 
@@ -21,7 +20,7 @@ export default () => {
         </div>
         <Image
           className="hero__bg-image"
-          src="/src/assets/images/hero/bg.png"
+          src="/src/assets/images/hero/bg.svg"
           loading="eager"
         />
       </div>

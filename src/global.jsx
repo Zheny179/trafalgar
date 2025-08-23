@@ -1,6 +1,7 @@
 import { Head } from "minista"
 import Header from "@/layouts/header"
 import "./styles"
+import Footer from "@/layouts/footer"
 
 export default (props) => {
   const { children, url } = props
@@ -13,7 +14,7 @@ export default (props) => {
       </Head>
       <Header url={url} />
       <main>{children}</main>
-      <footer></footer>
+      <Footer />
     </>
   )
 }

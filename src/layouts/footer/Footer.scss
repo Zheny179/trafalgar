@@ -1,0 +1,50 @@
+.footer {
+  padding-block: 50px;
+  background: var(--color-green-100);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__soc1als {
+    &-list {
+      display: flex;
+      column-gap: 20px;
+      color: var(--color-white);
+    }
+
+    &-item {
+    }
+
+    &-link {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 44px;
+        height: 44px;
+        translate: -50% -50%;
+      }
+    }
+
+    &-icon {
+    }
+  }
+
+  &__copyright {
+    font-size: fluid(20, 14);
+    line-height: 1.25;
+    text-align: right;
+    color: var(--color-white);
+  }
+}

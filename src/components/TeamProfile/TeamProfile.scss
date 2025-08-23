@@ -1,0 +1,46 @@
+.team-profile {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  justify-content: space-between;
+  gap: 35px fluid(47, 20);
+
+  @include laptop {
+    grid-template-columns: repeat(2, 280px);
+    justify-content: space-around;
+  }
+
+  @include mobile {
+    grid-template-columns: minmax(230px, 280px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 40px;
+    background: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  &__photo {
+    margin-inline: auto;
+  }
+
+  &__info {
+    &-name {
+      margin-bottom: 17px;
+      font-family: var(--font-family-second), sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--color-dark-100);
+    }
+
+    &-post {
+      font-size: 15px;
+      line-height: 1.25;
+      color: var(--color-dark-75);
+    }
+  }
+}
