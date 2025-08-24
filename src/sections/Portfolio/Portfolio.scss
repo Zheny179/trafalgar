@@ -1,0 +1,33 @@
+.portfolio {
+  &__block {
+    display: grid;
+    row-gap: fluid(70, 20);
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 570px);
+      justify-content: space-between;
+      place-items: center center;
+      row-gap: fluid(55, 30);
+
+      @include laptop {
+        grid-template-columns: minmax(230px, 570px);
+        justify-content: center;
+      }
+    }
+
+    &-item {
+    }
+
+    &-link {
+      vertical-align: middle;
+    }
+
+    &-img {
+    }
+  }
+
+  &__link {
+    justify-self: center;
+  }
+}

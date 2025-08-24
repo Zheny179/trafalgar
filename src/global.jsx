@@ -1,19 +1,23 @@
-import { Head } from "minista"
-import Header from "@/layouts/header"
-import "./styles"
-import Footer from "@/layouts/footer"
+import { Head } from 'minista'
+import Header from '@/layouts/header'
+import './styles'
+import Footer from '@/layouts/footer'
+import Content from '@/layouts/Content'
 
 export default (props) => {
-  const { children, url } = props
+  const { children, url, title } = props
 
   return (
     <>
-      <Head htmlAttributes={{ lang: "en" }}>
-        <title>Hello!</title>
-        <script src="/src/main.js" type="module" />
+      <Head htmlAttributes={{ lang: 'en' }}>
+        <title>Trafalgar | {title}</title>
+        <script
+          src='/src/main.js'
+          type='module'
+        />
       </Head>
       <Header url={url} />
-      <main>{children}</main>
+      <Content>{children}</Content>
       <Footer />
     </>
   )

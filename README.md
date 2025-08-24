@@ -11,7 +11,9 @@
 ![Prettier](https://img.shields.io/badge/prettier-black?style=for-the-badge&logo=prettier&logoColor=white)
 ![postcss](https://img.shields.io/badge/postcss-black?style=for-the-badge&logo=postcss&logoColor=white)
 
+
 ---
+👉 [Посмотреть онлайн (GitHub Pages)](https://zheny179.github.io/trafalgar/)
 
 ## 📸 Скриншот
 

@@ -1,47 +1,8 @@
 .sponsors {
-  padding-block: 70px;
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    row-gap: 55px;
-  }
-
-  &__wrapper {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    max-width: 411px;
-  }
-
-  &__suptitle {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: 0.31em;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color-green-100);
-  }
-
-  &__title {
-    font-family: var(--font-family-second), sans-serif;
-    font-size: fluid(40, 24);
-    font-weight: 700;
-    line-height: 1.25;
-    text-align: center;
-    color: #000000;
-  }
-
-  &__desc {
-    font-size: 20px;
-    line-height: 1.25;
-    text-align: center;
-    color: #000000;
-  }
-
   &__block {
+    display: grid;
+    row-gap: fluid(55, 40);
+
     &-list {
       display: flex;
       flex-wrap: wrap;
@@ -62,6 +23,6 @@
   }
 
   &__link {
-    align-self: center;
+    justify-self: center;
   }
 }

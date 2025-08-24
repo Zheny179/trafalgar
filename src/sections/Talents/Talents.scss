@@ -1,48 +1,12 @@
 .talents {
   padding-block: 70px;
 
-  &__inner {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    max-width: 404px;
-    margin-inline: auto;
-    margin-bottom: 45px;
-  }
-
-  &__suptitle {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: 0.31em;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color-green-100);
-  }
-
-  &__title {
-    font-family: var(--font-family-second), sans-serif;
-    font-size: fluid(40, 24);
-    font-weight: 700;
-    line-height: 1.25;
-    text-align: center;
-    color: var(--color-dark-100);
-  }
-
-  &__desc {
-    font-size: 20px;
-    line-height: 1.25;
-    text-align: center;
-    color: var(--color-black);
-  }
-
   &__link {
-    align-self: center;
+    justify-self: center;
     margin-top: 45px;
+  }
+
+  &__block {
+    display: grid;
   }
 }

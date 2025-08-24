@@ -1,21 +1,27 @@
-import "./Talents.scss"
-import TeamProfile from "@/components/TeamProfile"
-import Button from "@/components/Button"
+import './Talents.scss'
+import TeamProfile from '@/components/TeamProfile'
+import Button from '@/components/Button'
+import Section from '@/layouts/Section'
 
 export default () => {
   return (
-    <section className="talents">
-      <div className="talents__inner container">
-        <div className="talents__wrapper">
-          <p className="talents__suptitle">team</p>
-          <h2 className="talents__title">Our Talents</h2>
-          <p className="talents__desc">
-            Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,
-          </p>
-        </div>
+    <Section
+      title='Our Talents'
+      titleId='our-talents-title'
+      description='Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,'
+      suptitle='team'
+      className='talents'
+    >
+      <div className='talents__block'>
         <TeamProfile />
-        <Button className="talents__link" label="View Team" link bg />
+        <Button
+          className='talents__link'
+          label='View Team'
+          title='View Team'
+          link
+          bg
+        />
       </div>
-    </section>
+    </Section>
   )
 }

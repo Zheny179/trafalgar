@@ -1,7 +1,7 @@
-import "./ContentSection.scss"
-import { Image } from "minista"
-import Button from "@/components/Button"
-import clsx from "clsx"
+import './ContentSection.scss'
+import { Image } from 'minista'
+import Button from '@/components/Button'
+import clsx from 'clsx'
 
 export default (props) => {
   const {
@@ -21,14 +21,15 @@ export default (props) => {
     <section className={sectionClass}>
       <div className={innerClass}>
         <Image
-          className={clsx("content-section__img", imgPosition)}
+          className={clsx('content-section__img', imgPosition)}
           src={imageSrc}
         />
-        <div className="content-section__wrapper">
-          <h2 className="content-section__title">{title}</h2>
-          <p className="content-section__desc">{description}</p>
+        <div className='content-section__wrapper'>
+          <h2 className='content-section__title'>{title}</h2>
+          <p className='content-section__desc'>{description}</p>
           <Button
-            className="content-section__link"
+            className='content-section__link'
+            title={buttonText}
             link
             label={buttonText}
             bg

@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "CrimsonText";
-  src: url("@/assets/fonts/CrimsonText.woff2") format("woff2");
+  font-family: 'CrimsonText';
+  src: url('@/assets/fonts/CrimsonText.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "WorkSans";
-  src: url("@/assets/fonts/WorkSans.woff2") format("woff2-variations");
-  src: url("@/assets/fonts/WorkSans.woff2") format("woff2") tech("variations");
+  font-family: 'WorkSans';
+  src: url('@/assets/fonts/WorkSans.woff2') format('woff2-variations');
+  src: url('@/assets/fonts/WorkSans.woff2') format('woff2') tech('variations');
   font-weight: 400 700;
   font-display: swap;
   font-style: normal;

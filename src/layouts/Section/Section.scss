@@ -1,0 +1,41 @@
+.section {
+  display: grid;
+  row-gap: fluid(55, 40);
+  padding-block: 70px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: fluid(16, 10);
+    max-width: 411px;
+    margin-inline: auto;
+  }
+
+  &__suptitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0.31em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-green-100);
+  }
+
+  &__title {
+    font-family: var(--font-family-second), sans-serif;
+    font-size: fluid(40, 24);
+    font-weight: 700;
+    line-height: 125%;
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  &__desc {
+    font-size: fluid(20, 16);
+    line-height: 1.25;
+    text-align: center;
+    color: var(--color-black);
+  }
+}

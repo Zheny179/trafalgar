@@ -1,14 +1,14 @@
 .burger-button {
   @include flex-center;
 
+  z-index: 1;
   flex-direction: column;
   row-gap: 7px;
-
-  @include square(44px);
-
   padding: 0;
   background-color: transparent;
   border: none;
+
+  @include square(44px);
 
   @include hover {
     span {
